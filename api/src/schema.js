@@ -6,34 +6,16 @@ const { ApolloServer } = require("apollo-server");
  */
 const typeDefs = gql`
   type User {
-    email: String!
-    avatar: String
-    friends: [User]!
+    id: String
+    username: String
   }
 
-  type Query {
-    me: User!
-    friends: [User]!
+  type Pet {
+    id: String
+    createdAt: Number
+    name: String
+    type: String
   }
 `;
-const resolvers = {
-  Query: {
-    me() {
-      return {
-        email: "yoda@masters.com",
-        avatar: "http://yoda.png",
-        friends: [],
-      };
-    },
-  },
-};
 
-const server = new ApolloServer({
-  typeDefs,
-  resolvers,
-});
-
-server.listen(4000).then(() => {
-  console.log("YOU MADE A GRAPHQL SERVER");
-});
 module.exports = typeDefs;

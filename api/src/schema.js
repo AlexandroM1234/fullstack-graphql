@@ -1,4 +1,4 @@
-const { gql } = require("graphql-tag");
+const { gql } = require("apollo-server");
 const { ApolloServer } = require("apollo-server");
 
 /**
@@ -13,9 +13,10 @@ const typeDefs = gql`
 
   type Query {
     me: User!
+    friends: [User]!
   }
 `;
-const resolver = {
+const resolvers = {
   Query: {
     me() {
       return {

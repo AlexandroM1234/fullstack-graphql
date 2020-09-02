@@ -15,17 +15,17 @@ const typeDefs = gql`
     name: String!
     type: String!
     img: String!
-    buddies(): [Pet]
+    buddies: [Pet]
   }
 
   input PetsInput {
     name: String
     type: String
   }
-  
+
   type Query {
     pets(input: PetsInput): [Pet]!
-    pet(input: PetsInput):Pet
+    pet(input: PetsInput): Pet
   }
 `;
 

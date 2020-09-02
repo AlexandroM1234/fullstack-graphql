@@ -21,6 +21,12 @@
       "createdAt": 4,
       "name": "Bowl",
       "type": "FISH"
+    },
+    {
+      "id": "-miQanizOwn_qpnF88-_H",
+      "createdAt": 1599082563061,
+      "name": "Alex",
+      "type": "Wild Animal"
     }
   ]
 }

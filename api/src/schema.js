@@ -6,11 +6,11 @@ const { gql } = require("apollo-server");
 const typeDefs = gql`
   # Enums are values that can replace types and make it so the input is only one you state
   enum Animal {
-    DOG
-    CAT
-    FISH
-    BIRD
-    HAMSTER
+    Dog
+    Cat
+    Fish
+    Bird
+    Hamster
   }
 
   type User {

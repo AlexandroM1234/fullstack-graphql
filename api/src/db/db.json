@@ -8,25 +8,25 @@
       "id": "1",
       "createdAt": 4,
       "name": "Bob",
-      "type": "DOG"
+      "type": "Dog"
     },
     {
       "id": "2",
       "createdAt": 4,
       "name": "A",
-      "type": "CAT"
+      "type": "Cat"
     },
     {
       "id": "3",
       "createdAt": 4,
       "name": "Bowl",
-      "type": "FISH"
+      "type": "Fish"
     },
     {
       "id": "-miQanizOwn_qpnF88-_H",
       "createdAt": 1599082563061,
       "name": "Alex",
-      "type": "Wild Animal"
+      "type": "Hamster"
     }
   ]
 }

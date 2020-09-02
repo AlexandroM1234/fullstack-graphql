@@ -3,5 +3,24 @@
     "id": "jBWMVGjm50l6LGwepDoty",
     "username": "frontendmaster"
   },
-  "pet": []
+  "pet": [
+    {
+      "id": "1",
+      "createdAt": 4,
+      "name": "Bob",
+      "type": "DOG"
+    },
+    {
+      "id": "2",
+      "createdAt": 4,
+      "name": "A",
+      "type": "CAT"
+    },
+    {
+      "id": "3",
+      "createdAt": 4,
+      "name": "Bowl",
+      "type": "FISH"
+    }
+  ]
 }

@@ -4,6 +4,15 @@ const { gql } = require("apollo-server");
  * Type Definitions for our Schema using the SDL.
  */
 const typeDefs = gql`
+  # Enums are values that can replace types and make it so the input is only one you state
+  enum Animal {
+    DOG
+    CAT
+    FISH
+    BIRD
+    HAMSTER
+  }
+
   type User {
     id: ID!
     username: String!
@@ -13,14 +22,14 @@ const typeDefs = gql`
     id: ID!
     createdAt: String!
     name: String!
-    type: String!
+    type: Animal!
     img: String!
     buddies: [Pet]
   }
 
   input PetsInput {
     name: String
-    type: String
+    type: Animal
   }
 
   type Query {
@@ -30,7 +39,7 @@ const typeDefs = gql`
 
   input newPetInput {
     name: String!
-    type: String!
+    type: Animal!
   }
 
   type Mutation {

@@ -12,4 +12,9 @@ module.exports = {
       return ctx.models.Pet.findOne(input);
     },
   },
+  Mutation: {
+    newPet(_, { input }, ctx) {
+      return ctx.models.Pet.create(input);
+    },
+  },
 };

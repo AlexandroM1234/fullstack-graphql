@@ -5,6 +5,7 @@ import PetsList from "../components/PetsList";
 import NewPetModal from "../components/NewPetModal";
 import Loader from "../components/Loader";
 
+
 const ALL_PETS = gql`
   query AllPets {
     pets {
@@ -38,8 +39,7 @@ export default function Pets() {
 
   if (error || newPet.error) {
     return <p>{error}</p>;
-  }
-
+    
   const onSubmit = (input) => {
     setModal(false);
     createPet({

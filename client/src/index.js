@@ -7,9 +7,7 @@ import "./index.css";
 import client from "./client";
 const Root = () => (
   <BrowserRouter>
-    <ApolloProvider client={client}>
-      <App />
-    </ApolloProvider>
+    <App />
   </BrowserRouter>
 );
 

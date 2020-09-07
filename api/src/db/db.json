@@ -5,32 +5,18 @@
   },
   "pet": [
     {
-      "id": "1",
-      "createdAt": 4,
-      "name": "Bob",
-      "type": "Dog",
-      "user": "jBWMVGjm50l6LGwepDoty"
-    },
-    {
-      "id": "2",
-      "createdAt": 4,
-      "name": "A",
-      "type": "Cat",
-      "user": "jBWMVGjm50l6LGwepDoty"
-    },
-    {
-      "id": "3",
-      "createdAt": 4,
-      "name": "Bowl",
-      "type": "Fish",
-      "user": "jBWMVGjm50l6LGwepDoty"
-    },
-    {
-      "id": "-miQanizOwn_qpnF88-_H",
-      "createdAt": 1599082563061,
+      "id": "asdlkfjaklsjghaksjng",
+      "createdAt": "420",
       "name": "Alex",
-      "type": "Hamster",
+      "type": "DOG"
+    },
+    {
+      "id": "6rvWtomJ-8l7MSm85BNYr",
+      "createdAt": 1599513927495,
+      "name": "Wack",
+      "type": "DOG",
       "user": "jBWMVGjm50l6LGwepDoty"
     }
   ]
 }
+

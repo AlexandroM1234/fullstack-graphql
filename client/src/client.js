@@ -4,6 +4,7 @@ import { HttpLink } from "apollo-link-http";
 import gql from "graphql-tag";
 import { ApolloLink } from "apollo-link";
 import { setContext } from "apollo-link-context";
+
 /**
  * Create a new apollo client and export as default
  */

@@ -1,34 +1,33 @@
+/**
+ * Here are your Resolvers for your Schema. They must match
+ * the type definitions in your scheama
+ */
+
 module.exports = {
   Query: {
-    pets(_, {input}, {models}) {
-      return models.Pet.findMany(input || {})
+    pets(_, { input }, ctx) {
+      return ctx.models.Pet.findMany(input);
     },
-    pet(_, {id}, {models}) {
-      return models.Pet.findOne({id})
+    pet(_, { input }, ctx) {
+      console.log("Query => Pet");
+      return ctx.models.Pet.findOne(input);
     },
-    user(_, __, {models}) {
-      return models.User.findOne()
-    }
   },
   Mutation: {
-    addPet(_, {input}, {models, user}) {
-      const pet = models.Pet.create({...input, user: user.id})
-      return pet
-    }
+    newPet(_, { input }, ctx) {
+      return ctx.models.Pet.create(input);
+    },
   },
   Pet: {
-    owner(pet, _, {models}) {
-      return models.User.findOne({id: pet.user})
+    owner(_, __, ctx) {
+      console.log("PET => owner");
+      return ctx.models.User.findOne();
     },
-    img(pet) {
-      return pet.type === 'DOG'
-        ? 'https://placedog.net/300/300'
-        : 'http://placekitten.com/300/300'
-    }
   },
   User: {
-    pets(user, _, {models}) {
-      return models.Pet.findMany({user: user.id})
-    }
-  }
-}
+    pets(user, _, ctx) {
+      console.log("User => Pets");
+      return ctx.models.Pet.findMany();
+    },
+  },
+};
